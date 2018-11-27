@@ -137,14 +137,14 @@ def main():
         command = input().split()
         print()
 
-        if command[0] == "exit":			    # Exit loop & program
+        if command[0] == "exit":			        # Exit loop & program
             print("Goodbye.")
             break
 
-        elif command[0] == "help":				# User manual
+        elif command[0] == "help":				    # User manual
             help()
 
-        elif command[0] == "view":				# Display data
+        elif command[0] == "view":				    # Display data
             view(command[1])
 
         elif command[0] == "add":					# Add app
