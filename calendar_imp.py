@@ -43,10 +43,10 @@ def no_overlap(day, new_app):
     """
     for app in calendar[day]:
 
-        na_start = new_app[1]
-        na_end = new_app[2]
-        app_start = app[1][0]
-        app_end = app[1][1]
+        na_start = min_conv(new_app[1])
+        na_end = min_conv(new_app[2])
+        app_start = min_conv(app[1][0])
+        app_end = min_conv(app[1][1])
 
         if (na_start < app_start < na_end) or (na_start < app_end < na_end):
             return False
